@@ -3,22 +3,22 @@ body {
     padding: 10px;
 }
 
+nav{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .container {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr 1fr 1.5fr 0.5fr;
+    grid-template-rows: 2fr 1fr 1.5fr 0.5fr;
     grid-template-areas: 
-        "nav nav nav nav"
         "image image image image"
         "Aboutme aboutmeInfo aboutmeInfo aboutmeInfo"
         "Work Scheduler Weather prodHuc"
         "contactMe phoneNo email GitInk"
 }
 
-nav {
-    grid-area: navbar;
-}
 
 .image {
     grid-area: image;
