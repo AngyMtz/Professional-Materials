@@ -14,12 +14,13 @@ nav{
     height: 100vh;
     grid-gap: 10px;
     grid-template-columns: 0.75fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr 1fr;
     grid-template-areas: 
         "image image image image"
         "Aboutme aboutmeInfo aboutmeInfo aboutmeInfo"
         "Work Scheduler Weather prodHuc"
         "contactMe phoneNo email GitInk"
+        "footer footer footer footer";
 }
 
 .image {
@@ -33,7 +34,7 @@ nav{
 
 .Aboutme {
     grid-area: Aboutme;
-    border-right: 10px solid rgb(1, 1, 90);
+    border-right: 10px solid #5d5c61;
 }
 
 .aboutmeInfo {
@@ -45,7 +46,7 @@ nav{
 
 .Work {
     grid-area: Work;
-    border-right: 10px solid rgb(1, 1, 90);
+    border-right: 10px solid #5d5c61;
 }
 
 .workImage {
@@ -69,7 +70,7 @@ nav{
 
 .contactMe {
     grid-area: contactMe;
-    border-right: 10px solid rgb(1, 1, 90);
+    border-right: 10px solid #5d5c61;
 }
 
 .phoneNo {
@@ -85,4 +86,44 @@ nav{
 .GitInk {
     grid-area: GitInk;
     text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:    "image"
+                                "Aboutme"
+                                "aboutmeInfo"
+                                "Work"
+                                "Scheduler"
+                                "Weather"
+                                "prodHuc"
+                                "contactMe"
+                                "phoneNo"
+                                "email"
+                                "GitInk"
+                                "footer";
+    }
+    .Aboutme {
+        text-align: center;
+        border-bottom: 10px solid #5d5c61;
+    }
+    .Work {
+        text-align: center;
+        border-bottom: 10px solid #5d5c61;
+    }
+    .contactMe {
+        text-align: center;
+        border-bottom: 10px solid #5d5c61;
+    }
+    footer {
+        text-align: center;
+    }
 }
