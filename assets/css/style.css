@@ -1,26 +1,63 @@
 body {
     background-color: rgb(222, 224, 230);
-    padding: 10px;
+    /* width: 1000px; */
+    /* padding: 10px; */
 }
 
-nav{
+/* nav{
     margin-left: 13%;
     margin-right: 13%;
-}
+} */
 
 .container {
     display: grid;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
     grid-gap: 10px;
     grid-template-columns: 0.75fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr 0.3fr ;
-    grid-template-areas: 
+    grid-template-rows: 1fr 0.3fr 1fr 1.5fr 0.5fr 0.3fr ;
+    grid-template-areas:
+        "header header header header" 
         "image image image image"
         "Aboutme aboutmeInfo aboutmeInfo aboutmeInfo"
         "Work Scheduler Weather prodHuc"
         "contactMe phoneNo email GitInk"
         "footer footer footer footer";
+}
+
+header {
+    background-color: #557A95;
+    grid-area: header;
+    color: rgb(222, 224, 230);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+    margin-left: 25px;
+}
+
+header nav {
+    padding-top: 25px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+    position: static;
+    margin-right: 25px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+    position: static;
+}
+
+header a {
+    color: rgb(234, 240, 241);
 }
 
 .image {
@@ -99,7 +136,8 @@ footer {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr 0.3fr;
-        grid-template-areas:    "image"
+        grid-template-areas:    "header"
+                                "image"
                                 "Aboutme"
                                 "aboutmeInfo"
                                 "Work"
@@ -111,6 +149,10 @@ footer {
                                 "email"
                                 "GitInk"
                                 "footer";
+    }
+
+    header nav {
+        font-size: 15px;
     }
     .Aboutme {
         text-align: center;
