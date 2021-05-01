@@ -44,6 +44,10 @@ nav{
     grid-area: Work;
 }
 
+.workImage {
+    padding: 5px;
+}
+
 .Scheduler {
     grid-area: Scheduler;
 }
