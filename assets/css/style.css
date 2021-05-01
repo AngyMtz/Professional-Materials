@@ -14,7 +14,7 @@ nav{
     height: 100vh;
     grid-gap: 10px;
     grid-template-columns: 0.75fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr 2fr ;
+    grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr 0.3fr ;
     grid-template-areas: 
         "image image image image"
         "Aboutme aboutmeInfo aboutmeInfo aboutmeInfo"
