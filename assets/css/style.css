@@ -36,6 +36,8 @@ nav{
 
 .aboutmeInfo {
     grid-area: aboutmeInfo;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .Work {
