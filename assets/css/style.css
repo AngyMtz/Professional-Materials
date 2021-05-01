@@ -12,6 +12,7 @@ nav{
     display: grid;
     width: 100vw;
     height: 100vh;
+    grid-gap: 10px;
     grid-template-columns: 0.75fr 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr;
     grid-template-areas: 
@@ -32,46 +33,56 @@ nav{
 
 .Aboutme {
     grid-area: Aboutme;
+    border-right: 10px solid rgb(1, 1, 90);
 }
 
 .aboutmeInfo {
     grid-area: aboutmeInfo;
     text-align: justify;
     text-justify: inter-word;
+    padding-left: 15px;
 }
 
 .Work {
     grid-area: Work;
+    border-right: 10px solid rgb(1, 1, 90);
 }
 
 .workImage {
     padding: 5px;
 }
 
-.Scheduler {
+.Scheduler {    
     grid-area: Scheduler;
+    text-align: center;
 }
 
 .Weather {
     grid-area: Weather;
+    text-align: center;
 }
 
 .prodHuc {
     grid-area: prodHuc;
+    text-align: center;
 }
 
 .contactMe {
     grid-area: contactMe;
+    border-right: 10px solid rgb(1, 1, 90);
 }
 
 .phoneNo {
     grid-area: phoneNo;
+    text-align: center;
 }
 
 .email {
     grid-area: email;
+    text-align: center;
 }
 
 .GitInk {
     grid-area: GitInk;
+    text-align: center;
 }
