@@ -2,3 +2,64 @@ body {
     background-color: rgb(222, 224, 230);
     padding: 10px;
 }
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr 1.5fr 0.5fr;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "image image image image"
+        "Aboutme aboutmeInfo aboutmeInfo aboutmeInfo"
+        "Work Scheduler Weather prodHuc"
+        "contactMe phoneNo email GitInk"
+}
+
+nav {
+    grid-area: navbar;
+}
+
+.image {
+    grid-area: image;
+}
+
+.Aboutme {
+    grid-area: Aboutme;
+}
+
+.aboutmeInfo {
+    grid-area: aboutmeInfo;
+}
+
+.Work {
+    grid-area: Work;
+}
+
+.Scheduler {
+    grid-area: Scheduler;
+}
+
+.Weather {
+    grid-area: Weather;
+}
+
+.prodHuc {
+    grid-area: prodHuc;
+}
+
+.contactMe {
+    grid-area: contactMe;
+}
+
+.phoneNo {
+    grid-area: phoneNo;
+}
+
+.email {
+    grid-area: email;
+}
+
+.GitInk {
+    grid-area: GitInk;
+}
