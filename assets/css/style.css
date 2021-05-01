@@ -12,7 +12,7 @@ nav{
     display: grid;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.75fr 1fr 1fr 1fr;
     grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr;
     grid-template-areas: 
         "image image image image"
@@ -23,6 +23,11 @@ nav{
 
 .image {
     grid-area: image;
+}
+
+.Norma {
+    float: left;
+    margin-right: 15px;
 }
 
 .Aboutme {
