@@ -4,21 +4,22 @@ body {
 }
 
 nav{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 13%;
+    margin-right: 13%;
 }
+
 .container {
     display: grid;
+    width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr 1.5fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr;
     grid-template-areas: 
         "image image image image"
         "Aboutme aboutmeInfo aboutmeInfo aboutmeInfo"
         "Work Scheduler Weather prodHuc"
         "contactMe phoneNo email GitInk"
 }
-
 
 .image {
     grid-area: image;
