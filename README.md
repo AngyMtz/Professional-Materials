@@ -18,3 +18,7 @@ I also updated my GitHub profile with 3 pinned repositories that I feel are exem
 I have an updated resume
 
 I have an updated LinkedIn profile
+
+##Screenshot
+![Screenshot1](https://user-images.githubusercontent.com/78131360/116798175-c8c8ee00-aaa1-11eb-8790-5a94c5e0de8a.png)
+![Screenshot2](https://user-images.githubusercontent.com/78131360/116798176-c9fa1b00-aaa1-11eb-9800-c5c5de8dbd6f.png)
